@@ -73,7 +73,7 @@ generate_config() {
   "inbounds": [
     {
        "type": "hysteria2",
-       "listen": "::",
+       "listen": "$IP",
        "listen_port": $HY2_PORT,
        "users": [
          {
@@ -107,7 +107,7 @@ generate_config() {
     },
     {
       "type": "tuic",
-      "listen": "::",
+      "listen": "$IP",
       "listen_port": $TUIC_PORT,
       "users": [
         {
